@@ -1,13 +1,14 @@
 {
-  "name": "@samhwang/ts-starter-template",
+  "name": "@samhwang/cra-to-vite-cli",
   "version": "1.0.0",
-  "description": "TypeScript Starter Template",
+  "description": "CRA to Vite CLI",
   "engines": {
     "node": "^22.0.0",
     "pnpm": "^10.0.0"
   },
   "packageManager": "pnpm@10.4.1",
   "type": "module",
+  "bin": "./dist/index.js",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

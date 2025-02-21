@@ -1,20 +1,16 @@
-# TS Starter Template
+# Create-React-App to Vite CLI
 
-## Using this template
+This script migrates a non-ejected Create-React-App App to use Vite.
 
-There are 3 ways that you can adopt this template.
+```shell
+TBA
+```
 
-- Click the `Use this template` button on this repo, or click on [this link](https://github.com/samhwang/ts-starter-template/generate).
-- Clone this repo, delete the .git folder and re-init the Git tree.
-- Use `degit`: `npx degit samhwang/ts-starter-template project-name`
+## What is migrated
 
-## Batteries included
+For full details and manual instruction, see the [docs]() here. The summary is:
 
-- [TypeScript](https://www.typescriptlang.org/) - The core of this template.
-- [Biome](https://biomejs.dev/) for code formatting.
-- [Vitest](https://vitest.dev/) for running unit tests.
-- [Vite-node](https://github.com/vitest-dev/vitest/tree/main/packages/vite-node) for running the script locally.
-- [tsup](https://tsup.egoist.dev/) for bundling the project.
+...
 
 ## Available scripts
 
@@ -24,3 +20,8 @@ pnpm run test
 pnpm run format
 pnpm run build
 ```
+
+## Acknowledgement
+
+- Robin Wieruch for [this awesome write-up on CRA to Vite migration](https://www.robinwieruch.de/vite-create-react-app/ "Robin Wieruch - Migrate to Vite from CRA").
+- Parcel team for the [write-up](https://parceljs.org/migration/cra/ "Parcel - migrate from CRA") and this [`cra-to-parcel`](https://github.com/parcel-bundler/cra-to-parcel "CRA to Parcel CLI") CLI, which inspires development on this CLI itself.
