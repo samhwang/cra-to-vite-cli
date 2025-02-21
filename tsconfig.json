@@ -17,5 +17,5 @@
     "noEmit": true
   },
   "include": ["src", "bin", "tsup.config.ts", "vitest.config.ts"],
-  "exclude": ["samples"]
+  "exclude": ["samples", "assets"]
 }
