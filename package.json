@@ -34,6 +34,10 @@
     "lint:fix:unsafe": "biome check --write-unsafe .",
     "ci": "biome ci ."
   },
+  "dependencies": {
+    "@inquirer/prompts": "^7.3.2",
+    "commander": "^13.1.0"
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@types/node": "^22.13.4",
