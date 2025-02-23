@@ -2,7 +2,7 @@
 import process from 'node:process';
 import { confirm } from '@inquirer/prompts';
 import { program } from 'commander';
-import type { CommandOptions } from '../src/lib';
+import { type CommandOptions, precheck } from '../src/lib';
 
 program
   .name('cra-to-vite')
@@ -30,6 +30,8 @@ async function execute() {
       process.exit(0);
     }
   }
+
+  precheck(inputPath);
 }
 
 execute();
