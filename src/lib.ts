@@ -38,3 +38,19 @@ export function precheck(inputPath = '.') {
     return error(`Invalid package.json format! Cannot complete migration. Error: ${parsedPkg.error.issues.map((e) => e.message).join('\r\n')}`);
   }
 }
+
+export function detectPackageManager(inputPath = '.') {
+  if (fs.existsSync(path.join(inputPath, 'package-lock.json'))) {
+    return 'npm';
+  }
+
+  if (fs.existsSync(path.join(inputPath, 'yarn.lock'))) {
+    return 'yarn';
+  }
+
+  if (fs.existsSync(path.join(inputPath, 'pnpm-lock.yaml'))) {
+    return 'pnpm';
+  }
+
+  return error('No known package manager lock file detected!');
+}
